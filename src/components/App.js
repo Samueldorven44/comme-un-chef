@@ -1,8 +1,8 @@
-import Recipes from './Recipes';
+import RecipesList from './RecipesList';
 
 function App() {
   return <div>
-    <Recipes />
+    <RecipesList />
   </div>
 }
 
