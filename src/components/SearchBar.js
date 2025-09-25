@@ -1,11 +1,15 @@
+import '../styles/SearchBar.css'
+
 function SearchBar({ setTerm }) {
   return (
-    <input
-      type="text"
-      placeholder="Rechercher..."
-      onChange={(e) => setTerm(e.target.value)}
-      style={{ padding: '8px', width: '100%', marginBottom: '20px' }}
-    />
+    <div className='SearchBar'>
+      <input
+        type="text"
+        placeholder="Rechercher..."
+        className="search-input"
+        onChange={(e) => setTerm(e.target.value)}
+      />
+    </div>
   )
 }
 

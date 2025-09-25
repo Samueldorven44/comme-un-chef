@@ -1,0 +1,12 @@
+.title {
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 40px;
+}
+
+.MealList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
