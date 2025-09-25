@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# Comme un Chef
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ce dépôt présente un **exercice d'entraînement à la consommation d'API avec React**. L'objectif principal est de manipuler le cycle de vie d'un composant fonctionnel, d'utiliser `fetch` pour interroger un service REST public et de mettre en forme les résultats dans une interface moderne.
 
-## Available Scripts
+## 🎯 Objectifs pédagogiques
 
-In the project directory, you can run:
+- Réviser la structure d'une application créée avec Create React App.
+- Pratiquer les hooks `useState` et `useEffect` pour charger et filtrer des données distantes.
+- Comprendre la gestion d'état entre composants parents et enfants.
+- Expérimenter la mise en page responsive via des composants et feuilles de style dédiés.
 
-### `yarn start`
+## 🧩 Fonctionnalités principales
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Recherche dynamique de recettes auprès de l'API **[TheMealDB](https://www.themealdb.com/api.php)**.
+- Affichage d'une liste de plats avec visuel, catégorie et filtrage par mot-clé.
+- Ouverture d'un panneau latéral détaillant la recette sélectionnée : origine, instructions et lien vers une vidéo YouTube.
+- Design simple et efficace pour se concentrer sur la logique de récupération de données.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚀 Prise en main
 
-### `yarn test`
+```bash
+yarn install
+yarn start
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+L'application est servie sur [http://localhost:3000](http://localhost:3000). Toute modification des sources est automatiquement rechargée.
 
-### `yarn build`
+## 🧪 Tests
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Aucun scénario de test automatisé spécifique n'a été rédigé pour cet entraînement. Vous pouvez toutefois lancer la commande par défaut de Create React App :
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+yarn test
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🗂️ Structure rapide
 
-### `yarn eject`
+```
+src/
+  components/
+    App.js                   # Point d'entrée de l'interface
+    RecipesList.js           # Récupération des données et gestion du filtrage
+    SearchBar.js             # Composant contrôlé pour la saisie utilisateur
+    MealItem.js              # Carte d'affichage d'une recette
+    RecipeDetailsSidebar.js  # Panneau d'informations détaillées
+  styles/                    # Feuilles de styles CSS modulaires
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🔭 Pistes d'amélioration
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Ajouter une gestion d'état avancée (loading, erreurs, pagination).
+- Internationaliser l'interface et traduire les contenus de l'API.
+- Mettre en place des tests unitaires et des tests d'intégration (React Testing Library).
+- Déployer l'exercice sur une plateforme comme Netlify ou Vercel pour partager le résultat.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Ce projet reste volontairement simple afin de se concentrer sur la maîtrise des appels API dans un environnement React moderne.
